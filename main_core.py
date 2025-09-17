@@ -14,6 +14,8 @@ from AppOpener import open, close
 import os
 openai.api_key = os.getenv("OPENAI_API_KEY")  # Load API key from environment variable
 
+print("hello")
+
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 engine.setProperty('voice', voices[0].id)
